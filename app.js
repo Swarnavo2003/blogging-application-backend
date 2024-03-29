@@ -8,8 +8,8 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-app.get("/api", (req, res) => {
-  res.send("Hello World");
+app.get("/", (req, res) => {
+  res.send("Welcome to blogging application");
 });
 
 app.use("/api/user", userRouter);
